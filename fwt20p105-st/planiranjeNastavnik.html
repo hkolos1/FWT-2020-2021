@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Planiranje Nastavnik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="planiranjeNastavnik.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="posjecenost.html">Posjećenost</a></li>
+            <li><a href="sp4_z2/raspored.html">Raspored</a></li>
+            <li><a href="planiranjeNastavnik.html">Planiranje Nastavnik</a></li>
+            <li><a href="podaciStudent.html">Podaci Student</a></li>
+            <li><a href="obavijesti.html">Obavijesti</a></li>
+        </ul>
+    </nav>
+</header>
+<form>
+    <div>
+        <label>Naziv predmeta</label>
+        <input id="naziv" name="nazivpredmeta" type="text"><br>
+    </div>
+    <div>
+        <label>Tip</label>
+        <select id="tip" name="Tip" onchange="(function(){
+            const pocetak = document.getElementById('pocetak');
+            const kraj = document.getElementById('kraj');
+            if(pocetak.value)
+                validirajPocetak(pocetak);
+            if(kraj.value)
+                validirajKraj(kraj);
+        })()">
+            <option>Predavanje</option>
+            <option>Vježbe</option>
+        </select>
+    </div>
+    <div>
+        <label>Vrijeme početka</label>
+        <input id="pocetak" name="vrijemepocetka" type="time"/><br>
+    </div>
+    <div>
+        <label>Vrijeme kraja</label>
+        <input id="kraj" name="vrijemekraja" type="time"/><br>
+    </div>
+    <div>
+
+        <label>Dan u sedmici</label>
+        <select name="dan"/><br>
+        <option>Ponedjeljak</option>
+        <option>Utorak</option>
+        <option>Srijeda</option>
+        <option>Četvrtak</option>
+        <option>Petak</option>
+        </select>
+    </div>
+</form>
+<script src="validacija.js"></script>
+<script src="planiranjeNastavnik.js"></script>
+</body>
+</html>

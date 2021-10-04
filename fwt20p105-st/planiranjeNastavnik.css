@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+li, a{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #24252A;
+    text-decoration: none;
+    background-color: #48BF91;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #48BF91;
+}
+.nav__links{
+    list-style: none;
+    background-color: #48BF91;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: #48BF91;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136,169,0.8);
+}
+div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+label{
+    display: flex;
+    float: left;
+    width: 250px;
+    text-align: left;
+    
+}
+input{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+form{
+    margin-left: 150px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+body{
+    text-align: center;
+}
+
+.validno-polje {
+    background-color: lightgreen;
+}
+
+.nevalidno-polje {
+    background-color: lightpink;
+}

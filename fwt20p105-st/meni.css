@@ -1,0 +1,201 @@
+li, a{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #24252A;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.meni li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.meni li a{
+    transition: all 0.3s ease 0s;
+}
+
+.meni li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136,169,0.8);
+}
+
+.posjecenost {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 64px 1fr 64px;
+    grid-column-gap: auto;
+    grid-row-gap: auto;
+}
+
+.meni {
+        display: grid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+         grid-area: 1 / 2 / 2 / 9; 
+         background-color:  #48BF91;
+    }
+
+.logo { 
+    display: grid;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+img{
+    width: 64px;
+    height: 64px;
+
+}
+
+.predmeti {
+    display: grid;
+    grid-area: 2 / 1 / 3 / 3; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center ;    
+    font-weight: 500;
+    font-size: 20px;
+     background-color: #0076BE;
+}
+
+.sedmice { 
+    display: grid;
+    grid-area: 2 / 3 / 3 / 5; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center ; 
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #0076BE;
+}
+
+.studenti{
+    display: grid;
+    grid-area: 2 / 5 / 3 / 9; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center ; 
+    font-weight: 500;
+    font-size: 20px;
+    background-color:#0076BE;
+    
+}
+.table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.footer {
+    display: grid;
+    grid-area: 3 / 1 / 4 / 9; 
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center ; 
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #48BF91;
+}
+/*Zadatak 4. [3B]*/
+.container {
+    display: block;
+    width: 80%;    
+     /*Iz nepoznatog razloga ovdje mi ne zauzima 80% displaya, 
+     a kada stavim oko 400% radi kako bi trebalo... */
+    border-radius: 25px;
+    padding: 5px 5px 5px 5px;
+    margin: 70px 150px 70px 70px;
+    background: #dee6ef;
+    position: relative;  
+    color: #3465a4;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+  }
+#minuta{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: right;
+    font-size: 12px;
+}
+/*Kada se kursorom pređe preko svijetloplavog kvadrata*/
+.container:hover{
+    border: 3px solid #3465a4;
+}
+
+.x {
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+    position: absolute;
+    border:2px solid #3465a4;
+    color: #3465a4;
+    background:#729fcf;
+    
+      
+    top: -15px;
+    right: -15px;
+}
+/*Kada se kursorom pređe preko kvadrata za znakom X*/
+.x:hover{
+    /*Kada pređem kursorom preko X aktivira se i border za .container
+    taj problem sam pokušao riješiti sa zasebnim klasama, div, ali bez efekta*/
+    background-color:#3465a4 ;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+}
+/*Zadatak 3. [2B] Napravite prikaz prethodne stranice za uređaje sa širinom ekrana <=600px, 
+dodajući samo mediaquery...*/
+@media screen and (max-width: 600px){
+    .posjecenost {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 64px) repeat(2, 1fr) 64px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+  
+    .logo { grid-area: 1 / 1 / 2 / 9; }
+    .meni { grid-area: 2 / 1 / 3 / 9; }
+    .predmeti { grid-area: 3 / 1 / 4 / 5; }
+    .sedmice { grid-area: 3 / 5 / 4 / 9; }
+    .studenti { grid-area: 4 / 1 / 5 / 9; }
+    .footer { grid-area: 5 / 1 / 6 / 9; }
+    }
+
+@media only screen and (max-width: 500px) { 
+    
+    .container {
+        width: 100%;
+    }
+    .container:hover{
+        width: 100%;
+    }
+    .x{
+        width: auto;
+    }
+    .x:hover{
+        width: auto;
+    }
+}
