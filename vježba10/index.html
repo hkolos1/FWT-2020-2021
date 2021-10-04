@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>OOP JS</title>
+</head>
+
+<body>
+   <div id="polje" onclick="noviLijevi(event)" oncontextmenu="noviDesni(event)">
+   </div>
+   <style>
+       html,
+       body {
+           height: 100%;
+           padding: 0px;
+           margin: 0px;
+       }
+       #polje {
+           background-color: lightblue;
+           width: 100%;
+           height: 600px;
+           position: absolute;
+       }
+       .sivi {
+           background-color: gray;
+       }
+       .sivi,
+       .zeleni {
+           width: 10px;
+           height: 10px;
+           position: absolute;
+       }
+
+       .zeleni {
+           background-color: green;
+       }
+   </style>
+   <!-- Dodao sam jquery biblioteku zbog funkcije za sive kvadrate -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="primjer.js"></script>
+</body>
+</html>

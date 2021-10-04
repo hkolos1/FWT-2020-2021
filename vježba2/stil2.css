@@ -1,0 +1,25 @@
+head{
+    background-color: yellow;
+}
+body{
+    background-color: yellow;
+}
+table{
+    border: 2px solid rgba(7, 6, 6, 0.247);
+  border-collapse: collapse;
+}
+td{ 
+    font-weight: bold;
+    background-color: gray;
+      text-emphasis: bold;
+    height: 1cm;
+    text-align: center;
+    border: 2px solid rgba(7, 6, 6, 0.247);
+  border-collapse: collapse;
+}
+th{   background-color: ;
+    font-weight: 200;
+    height: 1cm;
+    border: 2px solid rgba(7, 6, 6, 0.247);
+  border-collapse: collapse;
+}

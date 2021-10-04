@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+/*obzirom da mi je prethodni zadatak okarakterisan kao prepisan, 
+na ovaj css file sam dodao grid*/
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    border-color: #99c;
+    background-color: #a7a09a;
+    overflow: hidden;
+}
+.okvir{
+    display: grid;
+    gap: 0;
+    
+    grid-template-columns: 500px 250px;
+    grid-template-rows: 110px 40px 300px 200px 50px;
+}
+
+h1 {
+    font-size: 42pt;
+    color: green;
+    font-family: Gabriela;
+    width: 750px;
+    height: 50px;
+    display: inline-block;
+    width: 735px;
+    padding-left: 15px;
+}
+
+.zaglavlje {
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+    background-color: #ddd;
+    
+}
+
+.meni {
+    grid-column-start: 1;
+    grid-column-end:   3 ;
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+    background-color:  #c99;
+    text-align: left;
+} 
+
+.meni ul li{
+    list-style-type: none;
+    display: inline;
+    padding-bottom: 30px;
+}
+
+.glavni {
+    grid-column-start: 1;
+    grid-column-end:   2 ;
+    grid-row-start: 3 ;               
+    grid-row-end: 5 ;       
+    background-color: #9c9;
+    padding-left: 15px;
+    /*nisam mogao da popravim visak zelene povrsine*/
+}
+
+.desno {
+    grid-column-start: 2;
+    grid-column-end:   2 ;
+    grid-row-start: 3 ;
+    grid-row-end: 5 ;
+    background-color: #c9c;
+ 
+    overflow: hidden;
+    border-bottom: 250px solid rgb(123, 123, 228);
+    padding-left: 10px;
+}
+
+.podnozje {
+    grid-column-start: 1;
+    grid-column-end:   3 ;
+    grid-row-start: 5 ;
+    grid-row-end: 6 ;
+    background-color: #cc9;
+    display: inline-block;
+    width: 735px;
+    padding-left: 15px;
+}

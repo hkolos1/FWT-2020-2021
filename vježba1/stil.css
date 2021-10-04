@@ -1,0 +1,17 @@
+
+
+
+.p{
+    color: green;
+}
+.text{
+    background-color: gray;
+}
+.pas{
+    background-color: black;
+    color: white;
+}
+
+p:hover {
+    background-color: yellow;
+  }

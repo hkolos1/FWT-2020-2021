@@ -1,0 +1,73 @@
+/*U ovom zadatku nisam znao uraditi gap za header i footer,
+i ovaj komentar mi služi kao posjetnik da mi neko od kolega pojasni na idućim vježbama*/
+
+.heder{
+    display: grid;
+    background-color: lightseagreen;
+    padding-top: 3em;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align:left ;
+    row-gap: 20px;
+/*Ovdje mi ne može tekst biti ispisan na u gornjem lijevom cosku, 
+probao sam sve moguće opcije i nije uspjelo :)*/
+
+}
+.sredina{
+    display: grid;
+    grid-template-columns: 100px 5fr 100px ;
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    
+    
+}
+.lijeva{
+    display: grid;
+    grid-row:1 / span 2;
+    grid-column: 1;
+    background-color: orange;
+    border: 1px solid black;
+    grid-template-columns: 200px 8px 200px;
+    row-gap: 20px;
+
+}
+.desna{
+    display: grid;
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    background-color: lightskyblue;
+    border: 1px solid black;
+    row-gap: 20px;
+
+}
+
+.sredinaup{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    height: auto;
+    background-color: gray;
+    border: 1px solid black;
+    row-gap: 20px;
+}
+
+.sredinadown{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: hotpink;
+    border: 1px solid black;
+    row-gap: 20px;
+
+}
+
+
+.futer{
+    display: grid;
+    padding-bottom: 2em;
+background-color: lime;
+border: 1px solid black;
+row-gap: 20px;
+
+}

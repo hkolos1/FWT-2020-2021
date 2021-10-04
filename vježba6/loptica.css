@@ -1,0 +1,16 @@
+body { 
+    background-color:white;
+}
+
+#kvadrat {
+    background: #1100ff;
+    border:2px solid black;
+}
+
+#container {
+    width:600px; 
+    margin:0 auto; 
+    display:block;
+    width:100%;
+    text-align:center;
+}

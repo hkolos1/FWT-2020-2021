@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100&display=swap");
+
+*{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.plus {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sakrij {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.prikaži {
+    overflow: visible;
+    max-height: fit-content;
+}
